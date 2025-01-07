@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours jquery</title>
+    <script type="module" src="./node_modules/jquery/dist/jquery.min.js" defer></script>
+    <script type="module" src="./node_modules/jquery-ui/dist/jquery-ui.min.js" defer></script>
+    <link rel="stylesheet" href="./node_modules/jquery-ui/dist/themes/base/jquery-ui.min.css">
+    <script type="text/javascript" src="./js/app.js" defer></script>
+    <style>
+        #carre {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+
+        #red,
+        #green,
+        #blue {
+            float: left;
+            clear: left;
+            width: 300px;
+            margin: 15px;
+        }
+
+        #swatch {
+            width: 120px;
+            height: 100px;
+            margin-top: 18px;
+            margin-left: 350px;
+            background-image: none;
+        }
+
+        #red .ui-slider-range {
+            background: #ef2929;
+        }
+
+        #red .ui-slider-handle {
+            border-color: #ef2929;
+        }
+
+        #green .ui-slider-range {
+            background: #8ae234;
+        }
+
+        #green .ui-slider-handle {
+            border-color: #8ae234;
+        }
+
+        #blue .ui-slider-range {
+            background: #729fcf;
+        }
+
+        #blue .ui-slider-handle {
+            border-color: #729fcf;
+        }
+    </style>
+</head>
+
+<body class="ui-widget-content" style="border:0;">
+
+    <ul id="javascript-list">
+        <li>TEST 1</li>
+        <li>TEST 2</li>
+        <li>TEST 3</li>
+        <li>TEST 4</li>
+    </ul>
+
+    <ul id="jquery-list">
+        <li>TEST 1</li>
+        <li>TEST 2</li>
+        <li>TEST 3</li>
+        <li>TEST 4</li>
+    </ul>
+
+    <button id="btnJs">Click JS</button>
+    <button id="btnJquery">Click JQUERY</button>
+    <br><br>
+    <div id="carre"></div>
+
+    <div class="ui-widget">
+        <label for="tags">Tags: </label>
+        <input id="tags">
+    </div>
+
+    <p class="ui-state-default ui-corner-all ui-helper-clearfix" style="padding:4px;">
+        <span class="ui-icon ui-icon-pencil" style="float:left; margin:-2px 5px 0 0;"></span>
+        Simple Colorpicker
+    </p>
+
+    <div id="red"></div>
+    <div id="green"></div>
+    <div id="blue"></div>
+
+    <div id="swatch" class="ui-widget-content ui-corner-all"></div>
+    <br><br><br>
+    <div id="progressbar">Chargement</div>
+
+</body>
+
+</html>
